@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav bar dropdown</title>
+    <link rel="stylesheet" href="practice_2.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h1>Boopathi <span>Vijayan</span></h1>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Project</li>
+                <li>Contact us</li>
+            </ul>
+            <img src="images/myprofile.jpg" class="user" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id="submenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="images/myprofile.jpg">
+                        <h3>Boopathi Vijayan</h3>
+                    </div>
+                    <hr>
+                  <a href="" class="sub-menu-link">
+                    <img src="images/profile.png" alt="">
+                    <p>Edit Profile</p>
+                    <span>></span>
+                  </a>
+                  <a href="" class="sub-menu-link">
+                    <img src="images/setting.png" alt="">
+                    <p>Setting</p>
+                    <span>></span>
+                  </a>
+                  <a href="" class="sub-menu-link">
+                    <img src="images/help.png" alt="">
+                    <p>Help</p>
+                    <span>></span>
+                  </a>
+                  <a href="" class="sub-menu-link">
+                    <img src="images/logout.png" alt="">
+                    <p>Log Out</p>
+                    <span>></span>
+                  </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script>
+        let submenu=document.getElementById("submenu");
+        function toggleMenu(){
+            submenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>

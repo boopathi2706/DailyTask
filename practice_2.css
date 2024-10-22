@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(146, 245, 252);
+}
+nav{
+    width: 100%;
+    padding: 10px 10%;
+    position: relative;
+    background-color:black;
+    display: flex;
+    color:white;
+    align-items: center;
+    justify-content:space-between;
+}
+.user{
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin:10px 30px;
+}
+nav h1{
+    width: 30%;
+    letter-spacing: 1px;
+}
+nav h1 span{
+    color: red;
+}
+nav ul{
+    width: 100%;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+.sub-menu-wrap{
+    position: absolute;
+    width: 320px;
+    top: 100%;
+    right: 10%;
+    max-height:0px;
+    overflow: hidden;
+    transition: max-height 0.8s;
+    border-radius: 10px;
+}
+.sub-menu-wrap.open-menu{
+    max-height: 450px;
+}
+.sub-menu{
+    padding: 20px;
+    margin:10px;
+    border-radius: 5px;
+    background-color: white;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
+.user-info h3{
+    font-weight: 500;
+    color: #525252;
+}
+.user-info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    margin: 15px 0 10px;
+    background-color:#525252;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 10px 0px;
+    color: #525252;
+}
+.sub-menu-link p{
+    width: 100%;
+}
+.sub-menu-link img{
+    width: 40px;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+    padding: 8px;
+    margin: 15px;
+}
+.sub-menu-link span{
+    font-size: 22px;
+    font-weight: 500;
+    transition: transform 0.8s;
+}
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+    font-weight: 600;
+}
